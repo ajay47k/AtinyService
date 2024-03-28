@@ -6,6 +6,12 @@ const path = require('path');
 const PORT = process.env.PORT || 5070;
 const connectDB =require('./config/DB')
 const app = express()
+const cors = require("cors");
+app.use(
+    cors({
+      origin: "*",
+    })
+  );
 connectDB()
 app.use(express.json())
 app.use("/url",urlRoute)

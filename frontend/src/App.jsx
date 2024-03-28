@@ -1,11 +1,10 @@
 import { useState } from 'react'
-
+import Container from './components/container.jsx'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      
+    <Container/>
     </>
   )
 }

@@ -5,4 +5,4 @@ const router = express.Router()
 router.route("/").post(shortenURL)
 router.route("/:shortId").get(redirectURL)
 router.get("/analytics/:shortId", analytics);
-module.exports = router 
+module.exports = router  

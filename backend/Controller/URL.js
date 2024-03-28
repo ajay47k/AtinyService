@@ -41,7 +41,8 @@ const redirectURL = async (req,res)=>{
             $inc: { clicks: 1 }
         }
     )    
-    res.status(200).json(entry.redirectURL)
+    // res.status(200).json(entry.redirectURL)
+    res.redirect(entry.redirectURL)
  }
  catch(err){
     console.log(err)
